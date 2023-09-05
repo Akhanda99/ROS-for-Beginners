@@ -9,7 +9,7 @@ def callback(msg):
 
 def listener():
 
-    rospy.init_node('listener', anonymous=True)
+    rospy.init_node('listener')
 
     rospy.Subscriber('chatter', String, callback)
 

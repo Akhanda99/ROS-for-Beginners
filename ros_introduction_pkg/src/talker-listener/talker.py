@@ -6,7 +6,7 @@ from std_msgs.msg import String
 
 def talker():
     pub = rospy.Publisher('chatter', String, queue_size=10)
-    rospy.init_node('talker', anonymous=True)
+    rospy.init_node('talker')
     rate = rospy.Rate(10) # 10hz
     for i in range(0,100):
         hello_str = "hello world! I am a node. Can you hear me?"
